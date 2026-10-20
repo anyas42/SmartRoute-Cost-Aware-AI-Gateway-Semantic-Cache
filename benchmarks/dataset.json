@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "query": "What is gradient descent?",
+    "category": "simple_fact",
+    "expected_tier": "small",
+    "reference_answer": "Gradient descent is a first-order iterative optimization algorithm used to minimize a loss function by updating parameters in the negative gradient direction.",
+    "related_to_id": null
+  },
+  {
+    "id": 2,
+    "query": "What is gradient descent?",
+    "category": "exact_repeat",
+    "expected_tier": "small",
+    "reference_answer": "Gradient descent is a first-order iterative optimization algorithm used to minimize a loss function by updating parameters in the negative gradient direction.",
+    "related_to_id": 1
+  },
+  {
+    "id": 3,
+    "query": "Can you explain how gradient descent works in machine learning?",
+    "category": "paraphrase",
+    "expected_tier": "small",
+    "reference_answer": "Gradient descent minimizes the objective loss function by iteratively updating model parameters according to the gradient.",
+    "related_to_id": 1
+  },
+  {
+    "id": 4,
+    "query": "What is Docker and how do containers work?",
+    "category": "simple_fact",
+    "expected_tier": "small",
+    "reference_answer": "Docker packages applications and dependencies into lightweight containers that isolate processes and ensure consistent runtime execution across systems.",
+    "related_to_id": null
+  },
+  {
+    "id": 5,
+    "query": "Explain how Docker containerization operates.",
+    "category": "paraphrase",
+    "expected_tier": "small",
+    "reference_answer": "Docker packages applications and dependencies into isolated containerized environments sharing the host OS kernel.",
+    "related_to_id": 4
+  },
+  {
+    "id": 6,
+    "query": "Explain step by step how to derive the backpropagation equations for a multi-layer perceptron and analyze the mathematical trade-offs.",
+    "category": "system_design",
+    "expected_tier": "large",
+    "reference_answer": "Backpropagation computes error gradients using the multivariate chain rule across layers, updating weights through partial derivatives.",
+    "related_to_id": null
+  },
+  {
+    "id": 7,
+    "query": "Analyze the architectural trade-offs between monolithic and microservice architectures for a high-throughput payment processing system.",
+    "category": "system_design",
+    "expected_tier": "large",
+    "reference_answer": "Monoliths provide lower operational overhead and atomic transactions, whereas microservices enable independent scalability, fault isolation, and deployment velocity.",
+    "related_to_id": null
+  },
+  {
+    "id": 8,
+    "query": "```python\ndef fib(n):\n    return n if n <= 1 else fib(n-1) + fib(n-2)\n```\nOptimize this function using dynamic programming and analyze the Big-O time and space complexity.",
+    "category": "code_analysis",
+    "expected_tier": "large",
+    "reference_answer": "Memoization or iterative bottom-up tabularization reduces the time complexity from exponential O(2^n) to linear O(n) with O(1) space.",
+    "related_to_id": null
+  },
+  {
+    "id": 9,
+    "query": "Why should I use Redis in my web application?",
+    "category": "simple_fact",
+    "expected_tier": "small",
+    "reference_answer": "Redis is an in-memory key-value data store used to cache frequently accessed data, dramatically reducing database load and response latency.",
+    "related_to_id": null
+  },
+  {
+    "id": 10,
+    "query": "Why should I NOT use Redis for primary durable data storage?",
+    "category": "trap_negation",
+    "expected_tier": "large",
+    "reference_answer": "Redis is primarily an in-memory store; while persistence options exist (RDB/AOF), relational or document databases provide stronger ACID durability guarantees.",
+    "related_to_id": 9
+  },
+  {
+    "id": 11,
+    "query": "What is the capital of France?",
+    "category": "simple_fact",
+    "expected_tier": "small",
+    "reference_answer": "The capital of France is Paris.",
+    "related_to_id": null
+  },
+  {
+    "id": 12,
+    "query": "What is the capital of Germany?",
+    "category": "unrelated",
+    "expected_tier": "small",
+    "reference_answer": "The capital of Germany is Berlin.",
+    "related_to_id": 11
+  }
+]

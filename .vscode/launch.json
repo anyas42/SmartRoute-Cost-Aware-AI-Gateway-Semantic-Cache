@@ -1,0 +1,55 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "🚀 Run FastAPI Backend (SmartRoute)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "app.main:app",
+                "--host",
+                "127.0.0.1",
+                "--port",
+                "8000",
+                "--reload"
+            ],
+            "jinja": true,
+            "justMyCode": false,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "📊 Run Streamlit Dashboard",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "streamlit",
+            "args": [
+                "run",
+                "dashboard/app.py",
+                "--server.port",
+                "8501"
+            ],
+            "justMyCode": false,
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "name": "🧪 Run Pytest Suite",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "args": [
+                "tests/",
+                "-v"
+            ],
+            "justMyCode": true
+        },
+        {
+            "name": "📈 Run Benchmark Suite",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/benchmarks/run_benchmark.py",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}
